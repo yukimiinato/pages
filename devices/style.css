@@ -7,17 +7,24 @@ body {
     text-align: center;
     background-color: rgb(158, 92, 128);
     color: white;
-    a:link {
-        color: #c7ceff;
-    }
-
-    a:visited {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Remove horizontal scrolling */
+}
+a:link {
+    color: #c7ceff;
+}
+a:visited {
     color: #cbd2ff;
-    }
-
-    a:hover {
-        color: #8d8ead;
-    }
+}
+a:hover {
+    color: #8d8ead;
 }
 h2 {
     font-size: 1.5em;
@@ -29,10 +36,101 @@ time {
     color: #f0f0f0;
 }
 bold {
+    display: flex;
     font-weight: bold;
     font-size:1.3em;
 }
 .bottom {
     text-align: center;
     width: 100%;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 600px) {
+    body {
+        font-size: smaller;
+    }
+    hr {
+        width: 100vw;
+        margin-left: -20px;
+    }
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: white;
+    width: 100vw;
+    margin: 0;
+    position: relative;
+    left: -50vw;
+    right: -50vw;
+    transform: translateX(50%);
+}
+
+/* New styles for the grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 20px 40px;
+}
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.grid-item img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+@media (max-width: 600px) {
+    .grid-item img {
+        max-width: 35%;
+    }
+}
+@media (min-width: 601px) {
+    .grid-container {
+        width: calc(100vw - 80px);
+        padding: 20px 40px;
+    }
+    .grid-item {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .grid-item p, .grid-item img {
+        flex: 1;
+        margin: 0 10px;
+    }
+}
+
+/* New styles for the boxes in Accessories and Deprecated devices sections */
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+    width: 90%;
+    max-width: 800px;
 }

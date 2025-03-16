@@ -7,17 +7,21 @@ body {
     text-align: center;
     background-color: rgb(158, 92, 128);
     color: white;
-    a:link {
-        color: #c7ceff;
-    }
-
-    a:visited {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+a:link {
+    color: #c7ceff;
+}
+a:visited {
     color: #cbd2ff;
-    }
-
-    a:hover {
-        color: #8d8ead;
-    }
+}
+a:hover {
+    color: #8d8ead;
 }
 h2 {
     font-size: 1.5em;
@@ -31,4 +35,18 @@ time {
 .bottom {
     text-align: center;
     width: 100%;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+@media (max-width: 600px) {
+    body {
+        font-size: smaller;
+    }
 }
