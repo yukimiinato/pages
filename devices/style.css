@@ -134,3 +134,9 @@ hr {
     width: 90%;
     max-width: 800px;
 }
+/* Add this CSS reset to fix spacing issues in Firefox */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

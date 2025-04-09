@@ -88,3 +88,9 @@ bold {
         max-width: 50%; /* Adjust image size for mobile */
     }
 }
+/* Add this CSS reset to fix spacing issues in Firefox */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
