@@ -50,9 +50,3 @@ time {
         font-size: smaller;
     }
 }
-/* Add this CSS reset to fix spacing issues in Firefox */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
