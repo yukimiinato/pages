@@ -164,7 +164,7 @@ bold {
     height: auto;
 }
 
-.responsive-img[src="bwaa.jpg"] {
+.responsive-img[src="./cdn/bwaa.jpg"] {
     max-width: 30%;
     gap: 10px;
     margin: 10px;
@@ -214,7 +214,7 @@ a {
     .content > img {
         margin: 0;
     }
-    .responsive-img[src="bwaa.jpg"] {
+    .responsive-img[src="./cdn/bwaa.jpg"] {
         max-width: 50%;
     }
 }
