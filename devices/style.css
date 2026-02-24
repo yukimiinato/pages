@@ -1,9 +1,25 @@
 @font-face {
     font-family: 'SegoeUI';
-    src: url('fonts/SegUIVar.ttf') format('ttf'),
+    src: url('../fonts/SegUIVar.ttf') format('truetype'),
 }
+@font-face {
+    font-family: 'PlayFairDisplay';
+    src: url('../fonts/PlayfairDisp.ttf') format('truetype'),
+}
+@font-face {
+    font-family: 'HYWenHei';
+    src: url('../fonts/hywenhei.ttf') format('truetype'),
+}
+pfdi {
+    font-family: 'PlayFairDisplay', serif;
+}
+hyw {
+    font-family: 'HYWenHei', sans-serif;
+    font-size: 1.4em;
+}   
 body {
     font-family: "SegoeUI", sans-serif;
+    font-size: 1.2em;
     text-align: center;
     background-color: rgb(158, 92, 128);
     color: white;

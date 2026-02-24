@@ -1,7 +1,22 @@
 @font-face {
     font-family: 'SegoeUI';
-    src: url('fonts/SegUIVar.ttf') format('ttf'),
+    src: url('../fonts/SegUIVar.ttf') format('truetype'),
 }
+@font-face {
+    font-family: 'PlayFairDisplay';
+    src: url('../fonts/PlayfairDisp.ttf') format('truetype'),
+}
+@font-face {
+    font-family: 'HYWenHei';
+    src: url('../fonts/hywenhei.ttf') format('truetype'),
+}
+pfdi {
+    font-family: 'PlayFairDisplay', serif;
+}
+hyw {
+    font-family: 'HYWenHei', sans-serif;
+    font-size: 1.4em;
+}   
 body {
     font-family: "SegoeUI", sans-serif;
     text-align: center;
@@ -64,5 +79,7 @@ time {
 
 a {
     display: inline-block;
-    margin: 10px 0; /* Add spacing around links */
+    gap: 1px;
+    margin: 3px;
+    font-size: 1.5em;
 }
